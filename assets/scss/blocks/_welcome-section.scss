@@ -1,0 +1,177 @@
+.welcome-section {
+  height: 100vh;
+  background-image: url("../assets/img/main-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 45px;
+
+  &__container {
+    max-width: calc(100vw - 200px);
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__phone-box {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__phone-link {
+    @include text-style(1.8rem, 400, $main-color);
+  }
+
+  &__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__title {
+    @include text-style(4.8rem, 400, $main-color);
+    font-family: Prata, sans-serif;
+    line-height: 65px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include text-style(3rem, 400, $main-color);
+    line-height: 28.7px;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    width: 238px;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__socials {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+
+  @media (max-height: 870px) and (min-width: 1280px){
+    &__img {
+      width: 700px;
+    }
+  }
+
+  @media (max-height: 755px) {
+    &__img {
+      width: 600px;
+    }
+  }
+
+  @media (max-height: 665px) {
+    &__img {
+      width: 500px;
+    }
+  }
+
+
+  @media (max-width: 1400px) {
+    &__img {
+      width: 700px;
+    }
+  }
+
+  @media (max-width: 1275px) {
+    &__img {
+      width: 650px;
+    }
+  }
+
+  @media (max-width: 1235px) {
+    &__info {
+      padding-top: 41px;
+      justify-content: flex-start;
+    }
+
+    &__socials {
+      display: none;
+    }
+
+    &__img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    height: 480px;
+    padding-top: 20px;
+
+    &__container {
+      max-width: unset;
+      padding-left: 20px;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+    }
+
+    &__phone-box {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 24px;
+      }
+    }
+
+    &__phone-link {
+      display: none;
+    }
+
+    &__title {
+      @include text-style(2.4rem, 400, $main-color);
+      line-height: 32.5px;
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      @include text-style(1.4rem, 400, $main-color);
+      line-height: 13.4px;
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      display: none !important;
+    }
+
+    &__img {
+      width: 327px;
+      right: -30px;
+    }
+
+    &__logo {
+      width: 98px;
+    }
+  }
+}

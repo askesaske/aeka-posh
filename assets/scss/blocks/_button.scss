@@ -1,0 +1,38 @@
+.button {
+  height: 57px;
+  border: 1px solid $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-color;
+
+  @include text-style(1.8rem, 400, $white-color);
+
+  svg {
+    margin-left: 10px;
+    fill: $white-color;
+  }
+
+  &--tr {
+    background-color: transparent;
+    color: $main-color;
+    transition: all .3s;
+
+    svg {
+      fill: $main-color;
+    }
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+
+      svg {
+        fill: $white-color;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    font-size: 1.7rem;
+  }
+}

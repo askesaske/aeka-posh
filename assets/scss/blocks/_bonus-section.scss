@@ -1,0 +1,76 @@
+.bonus-section {
+  padding: 100px 0;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__heading {
+    margin-bottom: 100px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 490px;
+    height: 201px;
+    padding: 40px 20px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url("../assets/img/bonus-1.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../assets/img/bonus-2.png");
+    }
+  }
+
+  &__title {
+    @include text-style(2.4rem, 500, $main-color);
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include text-style(2.2rem, 400, $main-color);
+    line-height: 22px;
+  }
+
+  @include respond(tab-land) {
+    &__row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    padding: 24px 0;
+
+    &__heading {
+      margin-bottom: 24px;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__text {
+      @include text-style(1.8rem, 400, $main-color);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.main {
+  overflow-x: hidden;
+
+  &__section {
+    &:nth-child(even) {
+      background-color: #FDF4EE;
+    }
+
+    &:nth-child(odd) {
+      background-color: #F9E2CF;
+    }
+  }
+}

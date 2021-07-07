@@ -1,0 +1,116 @@
+.program-section {
+
+  padding: 100px 0;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__heading {
+    margin-bottom: 100px;
+
+    br {
+      display: none;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    align-items: end;
+  }
+
+  &__card {
+    height: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px 0;
+    text-align: center;
+
+    &:nth-child(1) {
+      background-image: url("../assets/img/card-1.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../assets/img/card-2.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../assets/img/card-3.png");
+    }
+
+    &:nth-child(4) {
+      background-image: url("../assets/img/card-4.png");
+    }
+
+    &:nth-child(5) {
+      background-image: url("../assets/img/card-5.png");
+    }
+  }
+
+  &__title {
+    @include text-style(2.4rem, 500, $main-color);
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include text-style(1.8rem, 400, $main-color);
+    line-height: 22px;
+  }
+
+  &__mobile-space {
+
+    &--show {
+      display: none;
+    }
+  }
+
+  @include respond(tab-land) {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+      align-items: end;
+    }
+  }
+
+  @include respond(phone) {
+    padding: 24px 0;
+
+    &__heading {
+      margin-bottom: 24px;
+
+      br {
+        display: block;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 16px;
+      align-items: unset;
+    }
+
+    &__card {
+      height: 250px;
+      padding: 65px 20px 0;
+      text-align: center;
+    }
+
+    &__mobile-space {
+      display: none;
+
+      &--show {
+        display: block;
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}

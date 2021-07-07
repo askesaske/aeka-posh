@@ -1,0 +1,17 @@
+.buy-now {
+  width: calc(100% - 16px);
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 44px;
+  background-color: $main-color;
+  @include text-style(1.8rem, 500, $white-color);
+  z-index: 1000;
+
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
+}
