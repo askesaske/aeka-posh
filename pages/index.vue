@@ -381,8 +381,11 @@
             <span>WhatsApp</span>
           </div>
 
-          <label class="buy-section__label">
-            <input type="checkbox" class="buy-section__checkbox">
+          <label class="buy-section__label"
+                 :class="{'buy-section__label--error' : activeClass}">
+            <input type="checkbox"
+                   class="buy-section__checkbox"
+                   v-model="isChecked">
             <span class="buy-section__checkmark"></span>
             <span>Я соглашаюсь с условиями оферты</span>
           </label>
@@ -427,7 +430,7 @@ export default {
         {
           show: false,
           title: "Как проходит оплата?",
-          text: "Для вашего удобства мы принимаем оплату онлайн переводом Kaspi.kz по данным указным выше на этом сайте. После перевода вам лишь нужно отправить развёрнутый скрин квитанции по номеру 8776 502 3636 (можно нажать на иконку WhatsApp на этой странице). Для других стран, также переходить на WhatsApp!",
+          text: "Для вашего удобства мы принимаем оплату онлайн переводом Kaspi.kz по данным указанным выше на этом сайте. После перевода вам лишь нужно отправить развёрнутый скрин квитанции по номеру 8776 502 3636 (можно нажать на иконку WhatsApp на этой странице). Для других стран, также переходить на WhatsApp!",
         },
         {
           show: false,
