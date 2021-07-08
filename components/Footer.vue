@@ -2,13 +2,13 @@
   <footer class="footer">
     <div class="footer__container">
 
-      <div class="footer__logo">
+      <a href="https://www.instagram.com/aeka.posh/?utm_medium=copy_link" class="footer__logo">
         <svg width="24" height="24">
           <use href="../assets/img/icons.svg#inst-2"></use>
         </svg>
 
         <span>@aeka.posh</span>
-      </div>
+      </a>
 
       <div class="footer__text">
         <a href="#">Договор публичной оферты</a>

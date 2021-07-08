@@ -46,7 +46,7 @@
         </div>
 
         <div class="welcome-section__socials">
-          <a href="#" class="welcome-section__social">
+          <a href="https://www.instagram.com/aeka.posh/?utm_medium=copy_link" class="welcome-section__social">
             <svg width="24" height="24">
               <use href="../assets/img/icons.svg#inst"></use>
             </svg>
