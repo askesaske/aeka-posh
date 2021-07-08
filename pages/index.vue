@@ -95,7 +95,9 @@
             Я автор данного курса <span>“Beauty formula”</span> по визажу для себя!
             <br><br>
 
-            <span class="about-section__italic">Сияй вместе с моей формулой красоты💫</span>
+            <span class="about-section__italic about-section__italic--row">
+              Сияй вместе с моей формулой красоты <img src="../assets/img/icons/dizzy-star.png" alt="">
+            </span>
 
             <button class="about-section__btn button button--tr" v-scroll-to="{el: '#program', duration: 700}">
               Что входит?
@@ -301,20 +303,23 @@
               <span>6200 тенге</span>
             </div>
 
-            <label class="buy-section__label">
-              <input type="checkbox" class="buy-section__checkbox">
+            <label class="buy-section__label"
+                   :class="{'buy-section__label--error' : activeClass}">
+              <input type="checkbox"
+                     class="buy-section__checkbox"
+                     v-model="isChecked">
               <span class="buy-section__checkmark"></span>
               <span>Я соглашаюсь с условиями оферты</span>
             </label>
 
-            <button class="buy-section__btn button button--tr">
+            <button class="buy-section__btn button button--tr" @click="goWpp">
               Выслать чек об оплате
               <svg width="34" height="17">
                 <use href="../assets/img/icons.svg#arrow"></use>
               </svg>
             </button>
 
-            <button class="buy-section__btn button button--tr">
+            <button class="buy-section__btn button button--tr" @click="goWpp">
               Задать вопрос
               <svg width="34" height="17">
                 <use href="../assets/img/icons.svg#arrow"></use>
@@ -402,7 +407,7 @@
 
     </section>
 
-    <button class="buy-now" v-scroll-to="{el: '#buy', duration: 700}">
+    <button class="buy-now" v-scroll-to="{el: '#buy', duration: 700}" :class="{'buy-now--hidden' : scrollPosition > 500}">
       Купить курс
     </button>
 
@@ -430,6 +435,9 @@ export default {
           text: "Все видео уроки будут публиковаться на закрытой странице в Инстаграм. Доступ на страницу ровно месяц.",
         },
       ],
+      isChecked: false,
+      activeClass: false,
+      scrollPosition: null,
     };
   },
   methods: {
@@ -442,8 +450,19 @@ export default {
       }
     },
     goWpp() {
-      window.open('https://wa.me/message/QGQGYLGDBLRVC1', '_blank');
-    }
+      if (this.isChecked) {
+        window.open('https://wa.me/message/QGQGYLGDBLRVC1', '_blank');
+        this.activeClass = false
+      } else {
+        this.activeClass = true
+      }
+    },
+    updateScroll() {
+      this.scrollPosition = window.scrollY
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
   }
 }
 </script>

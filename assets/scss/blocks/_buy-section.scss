@@ -1,6 +1,8 @@
 .buy-section {
   padding: 100px 0;
 
+  $e: &;
+
   &__container {
     @extend %container;
   }
@@ -47,6 +49,19 @@
 
     span {
       @include text-style(1.8rem, 400, $main-color);
+    }
+
+    &--error {
+      animation-name: twitch;
+      animation-duration: .3s;
+
+      span {
+        color: #e82b2b;
+      }
+
+      #{$e}__checkmark {
+        border-color: #e82b2b;
+      }
     }
 
     margin-bottom: 25px;

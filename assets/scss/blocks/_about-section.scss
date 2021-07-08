@@ -27,6 +27,16 @@
 
   &__italic {
     font-style: italic;
+
+    &--row {
+      display: flex;
+      align-items: flex-start;
+
+      img {
+        width: 20px;
+        margin-left: 5px;
+      }
+    }
   }
 
   &__btn {
@@ -52,6 +62,16 @@
     &__img {
       &--desktop {
         width: 400px;
+      }
+    }
+
+    &__italic {
+      &--row {
+        display: inline-block;
+
+        img {
+          margin-left: 3px;
+        }
       }
     }
   }

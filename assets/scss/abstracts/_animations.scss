@@ -4,3 +4,29 @@
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
+@keyframes twitch {
+  0% {
+    transform: translateX(-2px);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(2px);
+  }
+
+  60% {
+    transform: translateX(0px);
+  }
+
+  80% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
