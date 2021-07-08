@@ -11,8 +11,8 @@
       </a>
 
       <div class="footer__text">
-        <a href="#">Договор публичной оферты</a>
-        <a href="#">Политика конфиденциальности</a>
+        <a target="_blank" href="http://www.africau.edu/images/default/sample.pdf">Договор публичной оферты</a>
+        <a target="_blank" href="#">Политика конфиденциальности</a>
       </div>
 
     </div>
