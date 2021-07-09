@@ -11,8 +11,8 @@
       </a>
 
       <div class="footer__text">
-        <a target="_blank" href="/home/dev/ui/sample.pdf">Договор публичной оферты</a>
-        <a target="_blank" href="/home/dev/ui/sample.pdf">Политика конфиденциальности</a>
+        <a target="_blank" href="/offer/sample.pdf">Договор публичной оферты</a>
+        <a target="_blank" href="/privacy/sample.pdf">Политика конфиденциальности</a>
       </div>
 
     </div>
