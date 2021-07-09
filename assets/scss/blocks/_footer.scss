@@ -46,15 +46,28 @@
   }
 
   @include respond(phone) {
-    height: 64px;
+    height: 90px;
+
     &__container {
       max-width: 375px;
       padding: 0 15px;
       width: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    &__logo {
+      margin-bottom: 20px;
     }
 
     &__text {
-      display: none;
+      text-align: left;
+
+      a:first-child {
+        display: none;
+      }
     }
   }
 }

@@ -387,7 +387,7 @@
                    class="buy-section__checkbox"
                    v-model="isChecked">
             <span class="buy-section__checkmark"></span>
-            <span>Я соглашаюсь с условиями оферты</span>
+            <span>Я соглашаюсь с условиями <a href="/home/dev/ui/sample.pdf" class="buy-section__link">оферты</a></span>
           </label>
 
           <button class="buy-section__btn button button--tr" @click="goWpp">
