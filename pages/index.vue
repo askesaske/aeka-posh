@@ -335,10 +335,10 @@
 
             <div class="buy-section__text">
               Оплату производить на карту <br>
-              <span>4400 4301 4236 6233</span> <br><br>
+              <span>4400 4301 4236 6233</span> <span class="buy-section__card-name">(AYAULYM YSMANOVA)</span> <br><br>
 
               Или по номеру телефона <br>
-              <span>8 707 202 36 36 (KASPI)</span> <br><br>
+              <span>8 707 202 36 36 (KASPI)</span> <span class="buy-section__card-name">АЯУЛЫМ Ы.</span> <br><br>
 
               Обязательно скинуть <span>чек об оплате</span> и <br>
               название вашего <span>Инстаграм аккаунта</span> на <br>
@@ -348,7 +348,7 @@
               <span>WhatsApp</span>
             </div>
 
-            <img src="../assets/img/kaspi.png" alt="" class="buy-section__img">
+            <img src="../assets/img/kaspi.JPG" alt="" class="buy-section__img">
           </div>
 
         </div>
@@ -364,16 +364,16 @@
             Как произвести оплату?
           </p>
 
-          <img src="../assets/img/kaspi.png" alt="" class="buy-section__img">
+          <img src="../assets/img/kaspi.JPG" alt="" class="buy-section__img">
 
           <div class="buy-section__text">
             Оплату производить на карту <br>
-            <span>4400 4301 4236 6233</span> <br><br>
+            <span>4400 4301 4236 6233</span> <br> <span class="buy-section__card-name">(AYAULYM YSMANOVA)</span> <br><br>
 
             Или по номеру телефона <br>
-            <span>8 707 202 36 36 (KASPI)</span> <br><br>
+            <span>8 707 202 36 36 (KASPI)</span> <br> <span class="buy-section__card-name">АЯУЛЫМ Ы.</span> <br><br>
 
-            Обязательно скинуть <span>чек об оплате</span> и <br>
+            Обязательно скинуть <span>чек об оплате</span> и <br class="buy-section__mobile-br">
             название вашего <span>Инстаграм аккаунта</span> на <br>
             <span>WhatsApp +7 776 502 36 36</span> <br><br>
 

@@ -129,9 +129,19 @@
     margin-bottom: 20px;
   }
 
+  &__card-name {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #ff006f;
+  }
+
   &__link {
     @include text-style(1.4rem, 400, $main-color);
     text-decoration: underline;
+  }
+
+  &__img {
+    width: 390px;
   }
 
   @include respond(tab-land) {
@@ -167,6 +177,10 @@
 
     &__heading {
       margin-bottom: 24px;
+    }
+
+    &__mobile-br {
+      display: none;
     }
 
     &__box {
