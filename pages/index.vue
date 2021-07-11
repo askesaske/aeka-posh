@@ -338,7 +338,7 @@
               <span>4400 4301 4236 6233</span> <span class="buy-section__card-name">(AYAULYM YSMANOVA)</span> <br><br>
 
               Или по номеру телефона <br>
-              <span>8 707 202 36 36 (KASPI)</span> <span class="buy-section__card-name">АЯУЛЫМ Ы.</span> <br><br>
+              <span>8 707 202 36 36 (KASPI)</span> <span class="buy-section__card-name">(АЯУЛЫМ Ы.)</span> <br><br>
 
               Обязательно скинуть <span>чек об оплате</span> и <br>
               название вашего <span>Инстаграм аккаунта</span> на <br>
@@ -371,7 +371,7 @@
             <span>4400 4301 4236 6233</span> <br> <span class="buy-section__card-name">(AYAULYM YSMANOVA)</span> <br><br>
 
             Или по номеру телефона <br>
-            <span>8 707 202 36 36 (KASPI)</span> <br> <span class="buy-section__card-name">АЯУЛЫМ Ы.</span> <br><br>
+            <span>8 707 202 36 36 (KASPI)</span> <br> <span class="buy-section__card-name">(АЯУЛЫМ Ы.)</span> <br><br>
 
             Обязательно скинуть <span>чек об оплате</span> и <br class="buy-section__mobile-br">
             название вашего <span>Инстаграм аккаунта</span> на <br>
